@@ -38,8 +38,7 @@ class _MyAppState extends State<MyApp> {
             'Instagram',
             style: TextStyle(
                 fontFamily: 'Instagram', fontSize: 26, color: Colors.black87),
-          ),
-          centerTitle: true,
+          ),          
         ),
         body: CustomScrollView(
           slivers: <Widget>[
