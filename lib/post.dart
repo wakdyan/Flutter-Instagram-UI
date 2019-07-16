@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'assets.dart';
 
 class Post extends StatelessWidget {
@@ -97,7 +98,7 @@ class Post extends StatelessWidget {
                             ),
                             Text(' and '),
                             Text(
-                              "${numberLikes[index]}",
+                              "${numberlikes[index]}",
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
                           ],

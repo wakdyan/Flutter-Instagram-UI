@@ -38,18 +38,10 @@ var likes =[
   "lolokks_"
 ];
 
-var numberLikes =[
+var numberlikes =[
   "102 others",
   "24 others",
   "32 others",
   "74 others",
   "13 others",
-];
-
-var backgroundStories =[
-  true,
-  false,
-  true,
-  true,
-  false
 ];
