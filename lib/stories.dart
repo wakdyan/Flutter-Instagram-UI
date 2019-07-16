@@ -32,23 +32,19 @@ class Stories extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 physics: BouncingScrollPhysics(),
-                itemCount: stories.length,
+                itemCount: profile.length,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.only(left: 8),
                     child: CircleAvatar(
                       radius: 38,
-                      backgroundColor: Colors.redAccent,
+                      backgroundColor:
+                          (index % 2 == 0) ? Colors.red : Colors.grey,
                       child: CircleAvatar(
-                        child: Stack(
-                          // fit: StackFit.expand,
-                          children: <Widget>[
-                            Image.asset(
-                              stories[index],
-                              fit: BoxFit.cover,
-                              width: MediaQuery.of(context).size.width,
-                            ),
-                          ],
+                        child: Image.network(
+                          profile[index],
+                          fit: BoxFit.cover,
+                          width: MediaQuery.of(context).size.width,
                         ),
                         backgroundColor: Colors.white,
                         radius: 35,

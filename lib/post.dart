@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:transparent_image/transparent_image.dart';
 import 'assets.dart';
 
 class Post extends StatelessWidget {
@@ -20,9 +20,9 @@ class Post extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(left: 8),
                         child: CircleAvatar(
-                          child: Image.asset(
-                            profile[index],
-                            width: MediaQuery.of(context).size.width,
+                          child: FadeInImage.memoryNetwork(
+                            placeholder: kTransparentImage,
+                            image: profile[index],
                           ),
                           backgroundColor: Color(0xfff8faf8),
                           radius: 20,
@@ -50,11 +50,11 @@ class Post extends StatelessWidget {
                     ],
                   ),
                 ),
-                Image.asset(
-                  background[index],
-                  // height: MediaQuery.of(context).size.height / 1.6,
-                  // width: MediaQuery.of(context).size.width,
-                  fit: BoxFit.cover,
+                Center(
+                  child: FadeInImage.assetNetwork(                    
+                    placeholder: 'assets/tenor.gif',
+                    image: background[index],
+                  ),
                 ),
                 Row(
                   children: <Widget>[

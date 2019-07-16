@@ -24,6 +24,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.4.0
+  transparent_image: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +54,7 @@ flutter:
    - assets/bg3.jpg
    - assets/bg4.jpg
    - assets/bg5.jpg
+   - assets/tenor.gif
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
